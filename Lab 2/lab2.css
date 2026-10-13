@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://cdn.prod.website-files.com/65e1f74aeadd13bc01d31d46/65e20ab8b9f223796db4b147_8lfZJyWcYwzCHtZufrsCM4EGUJ5WMyy_HG0w7KDRsx2SEHrX70GQZhVe3jzL9qH50CPoJhQyKt9U5Jg0edFO9bOB88qFM3yT4ZeFaevNCKvMtwxJ23t0uOoFrtdOcYmw75U8cRUzcpYfRm65o94tViQ.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: white
+}
+  nav a {
+    color: white;                          
+    font-weight: bold;
+    font-size: 1.1rem;                   
+}

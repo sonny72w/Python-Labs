@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{%block head%}
+<title>Duty Assignments</title>
+<link rel = "stylesheet" href="{{url_for('static', filename="style.css")}}" />
+{% endblock %}
+    
+{% block body%}
+    <div class="to-do">
+        <h1>Duty Assignments</h1>
+
+        {% if tasks|length < 1 %}
+            <h3>No duties currently assigned yet. You may add one below!</h3>
+        {% else %}
+            <table>
+                <tr>
+                    <th>Student</th>
+                    <th>Task/Duty</th>
+                    <th>Date Created</th>
+                    <th>Actions</th>
+                </tr>
+
+                {% for task in tasks %}
+                <tr>
+                    <td>{{ task.name }}</td>
+                    <td>{{ task.duty }}</td>
+                    <td>{{ task.created.strftime('%Y-%m-%d %H:%M') }}</td>
+                    <td>
+                        <a href="/delete/{{ task.id }}">Delete</a>
+                        <a href="/edit/{{ task.id }}">Edit</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+        <h2>Add New Duty</h2>
+
+        <form action="/todo" method="POST" id="todo">
+            <input type="text" name="name" placeholder="Student Name" required>
+            <input type="text" name="duty" placeholder="Duty" required>
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
+
+{% endblock %}

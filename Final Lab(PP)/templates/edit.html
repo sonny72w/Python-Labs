@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{%block head%}
+<title>Edit/Duty Assignments</title>
+<link rel = "stylesheet" href="{{url_for('static', filename="style.css")}}" />
+{% endblock %}
+    
+{% block body %}
+</head>
+<body>
+    <div class = "to-do">
+        <h4>Update the list</h4>
+        <form action="/todo" method="POST" id="todo">
+            <input type="text" name="name" placeholder="Student Name" required>
+            <input type="text" name="duty" placeholder="Duty" required>
+            <input type="submit" value="Edit">
+        </form>
+
+    </div>
+    
+{% endblock %}
+</body>
+</html>

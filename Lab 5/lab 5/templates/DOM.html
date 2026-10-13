@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <script src="lab4.js"></script>
+    <script src="Lab 3"></script>
+    <link rel="stylesheet" href="lab2.css">
+    <title> DOM |ShieldWall MSP | Secure IT Solutions</title>
+</head>
+<body>
+     <nav>
+    <a href="home.html">Home</a> <a href="about.html">About Me</a>  <a href="contact.html">Contact</a> <a href="DOM.html" >DOM</a> </nav>
+  <div class="container mt-5 text-white">
+    <h1>Welcome to ShieldWall MSP DOM</h1>
+    
+    <div class="mt-4 p-4 border border-info rounded bg-dark">
+        <h3 class="text-info">Security Dashboard</h3>
+        
+        <p id="system-status" class="fw-bold">SYSTEM STATUS: UNKNOWN</p>
+        <button onclick="runSystemCheck()" class="btn btn-outline-info">Run System Scan</button>
+        
+        <hr class="border-info">
+
+        <button onclick="toggleSecurityInfo()" class="btn btn-warning mb-3">Toggle Firewall Logs</button>
+        
+        <div id="security-details" style="display: none;" class="p-3 bg-black text-success font-monospace">
+            <p>> [LOG] Connection from 192.168.60.4 Accepted</p>
+            <p>> [LOG] Firewall Rules Updated</p>
+            <p>> [LOG] Encryption Keys Rotated</p>
+        </div>
+    </div>
+</div>  
+</body>
+</html>
