@@ -35,6 +35,7 @@ navbar, tables and form layout.</b>
 - <b>Windows 11</b> (21H2)
 
 <h2>Python labs:</h2>
+
 - <b>Lab 1 to 5 the creation of msp and updates</b>
 
 - <b>Final Lab the creation duty board</b>
