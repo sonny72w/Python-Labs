@@ -36,9 +36,9 @@ navbar, tables and form layout.</b>
 
 <h2>Python labs:</h2>
 
-- <b>Lab 1 to 5 the creation of msp and updates</b>
+- <b>[Lab 1 to 5 the creation of msp and updates](https://github.com/sonny72w/Python-Labs/tree/main/Lab%205/lab%205)</b>
 
-- <b>Final Lab the creation duty board</b>
+- <b>[Final Lab the creation duty board]()</b>
 
 
 
